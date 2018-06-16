@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <title>vim-master</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <header>vim-master</header>
+    <ul>
+      <a class="nav-link" href="#Introduction" rel="internal">
+        <li>Introduction</li>
+      </a>
+      <a class="nav-link" href="#Opening_Vim" rel="internal">
+        <li>Opening Vim</li>
+      </a>
+      <a class="nav-link" href="#Insert_Mode" rel="internal">
+        <li>Insert Mode</li>
+      </a>
+      <a class="nav-link" href="#Navigation" rel="internal">
+        <li>Navigation</li>
+      </a>
+      <a class="nav-link" href="#Saving_&_Quitting" rel="internal">
+        <li>Saving & Quitting</li>
+      </a>
+      <a class="nav-link" href="#Plugins_&_Plugin_Managers" rel="internal">
+        <li>Plugins & Plugin Managers</li>
+      </a>
+      <a class="nav-link" href="#Distributions_&_Forks" rel="internal">
+        <li>Distributions & Forks</li>
+      </a>
+      <a class="nav-link" href="#Other_Resources" rel="internal">
+        <li>Other Resources</li>
+      </a>
+    </ul>
+  </nav>  
+
+  <!-- Main -->
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <article>
+        <p>Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as "vi" with most UNIX systems and with Apple OS X.</p>
+        
+        <p>Vim is rock stable and is continuously being developed to become even better. Among its features are:</p>
+
+        <li>persistent, multi-level undo tree</li>
+        <li>extensive plugin system</li>
+        <li>support for hundreds of programming languages and file formats</li>
+        <li>powerful search and replace</li>
+        <li>integrates with many tools</li>
+      </article>
+    </section>
+    <section id="Opening_Vim" class="main-section">
+      <header>Opening Vim</header>
+      <article>
+
+        <p>Opening Vim:</p>
+
+        <code>vim</code>
+
+        <p>Opening Vim with a filename specified. Specifying a filename when it doesn't yet exist will create a new file with name:</p>
+
+        <code>vim [filename]</code>
+      </article>
+    </section>
+    <section id="Insert_Mode" class="main-section">
+      <header>Insert Mode</header>
+      <article>
+
+        <p>Enter <code class="code-inline">Insert</code> mode by pressing <code class="code-inline">i</code></p>
+      </article>
+    </section>
+    <section id="Navigation" class="main-section">
+      <header>Navigation</header>
+      <article>
+        <li><code class="code-inline">h</code> to move left</li>
+        <li><code class="code-inline">j</code> to move down</li>
+        <li><code class="code-inline">k</code> to move up</li>
+        <li><code class="code-inline">l</code> to move right</li>
+      </article>
+    </section>
+
+    <!-- Saving & Quitting -->
+    <section id="Saving_&_Quitting" class="main-section">
+      <header>Saving & Quitting</header>
+      <article>
+        <li><code class="code-inline">:w</code> saves the file without quitting</li>
+        <li><code class="code-inline">:wq</code> save the file and quits vim</li>
+        <li><code class="code-inline">:q</code> quits vim (can only be executed if there are no new unsaved changes)</li>
+      </article>
+    </section>
+
+    <!-- PLugins & Plugin Managers -->
+    <section id="Plugins_&_Plugin_Managers" class="main-section">
+      <header>Plugins & Plugin Managers</header>
+      <article>
+
+        <h4>Plugin Managers</h4>
+        <p><a href="https://github.com/junegunn/vim-plug" target="_blank">vim-plug</a></p>
+
+        <h4>Plugins</h4>
+        <p><a href="https://github.com/mattn/emmet-vim" target="_blank">emmet-vim</a></p>
+      </article>
+    </section>
+
+    <!-- Distributions & Forks -->
+    <section id="Distributions_&_Forks" class="main-section">
+      <header>Distributions & Forks</header>
+      <article>
+        <p><a href="https://neovim.io/" target="_blank">Neovim</a></p>
+      </article>
+    </section>
+
+    <!-- Other Resources -->
+    <section id="Other_Resources" class="main-section">
+      <header>Other Resources</header>
+      <article>
+        <p>Additional resources for learning Vim:</p>
+
+        <p><a href="http://vimhelp.appspot.com/vim_faq.txt.html" target="_blank">vim_faq.txt</a></p>
+        <p><a href="http://howivim.com/" target="_blank">howivim.com</a></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
