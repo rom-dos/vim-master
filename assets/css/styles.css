@@ -71,35 +71,12 @@ html, body {
   border-color: var(--orange3);
 }
 
-/*
-  ==================
-  Main
-  ==================
-*/
-
-header {
-  color: var(--orange7);
-  font-size: 1.8rem;
-  margin: 2rem;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 200;
+#navbar header {
+  font-size: 2rem;
+  color: var(--orange4);
+  text-shadow: 
+    2px 2px 2px var(--orange4);
 }
-
-#main-doc header {
-  text-align: left;
-  margin: 0px;
-}
-
-#main-doc li {
-  list-style-type: none;
-}
-
-#main-doc li:before { 
-  content: "❑"; 
-  padding-right: 0.8rem;
-}
-
 
 #navbar ul {
   height: 88%;
@@ -119,27 +96,62 @@ header {
   width: 100%;
 }
 
+#navbar li:hover {
+  color: var(--orange4);
+}
+
 #navbar a {
-  color: var(--orange7);
+  color: var(--orange4);
   text-decoration: none;
   cursor: pointer;
 }
 
+/*
+  ==================
+  Main
+  ==================
+*/
+
+header {
+  color: var(--orange7);
+  font-size: 1.8rem;
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  text-decoration: underline;
+  text-decoration-color: var(--orange3);
+}
+
+#main-doc li {
+  list-style-type: none;
+}
+
+#main-doc li:before { 
+  content: "❑"; 
+  padding-right: 0.8rem;
+}
+
 #main-doc {
   position: absolute;
-  margin-left: 310px;
-  padding: 20px;
-  margin-bottom: 110px;
+  margin-left: 20rem;
+  padding: 2rem;
+  margin-bottom: 8rem;
 }
 
 section article {
   color: var(--orange9);
-  margin: 15px;
-  font-size: 0.96em;
+  margin: 1.2rem;
+  font-size: 0.96rem;
 }
 
 section li {
-  margin: 15px 0px 0px 20px;
+  margin: 0.8rem 0px 0px 1.2rem;
 }
 
 code {
@@ -150,7 +162,8 @@ code {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: var(--orange2);
+  background-color: var(--orange1);
+  color: var(--orange8);
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
@@ -158,9 +171,13 @@ code {
 
 .code-inline {
   display: inline-block;
-  padding: 0.2rem;
-  margin: 0.2rem;
-  line-height: 1.2rem;
+  padding: 0.4rem;
+  margin: 0rem;
+  line-height: 1rem;
+}
+
+#intro-quote {
+  text-align: right;
 }
 
 /*
@@ -171,8 +188,7 @@ code {
 
 @media only screen and (max-width: 815px) {
   #navbar ul {
-    border: 1px solid;
-    height: 207px;
+    height: 205px;
   }
 
   #navbar {
@@ -182,15 +198,14 @@ code {
     padding: 0;
     margin: 0;
     width: 100%;
-    max-height: 370px;
+    max-height: 340px;
     border: none;
     z-index: 1;
-    /* border-bottom: 2px solid; */
   }
 
   #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 370px;
+    margin-top: 340px;
   }
 }
